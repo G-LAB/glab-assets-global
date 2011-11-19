@@ -1,0 +1,74 @@
+/* @override https://glabstudios.com/styles/global.css */
+
+.hide {
+	display: none;
+}
+
+.clear {
+	clear: both;
+	display: block;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.justl {
+	text-align: left !important;
+}
+
+.justr {
+	text-align: right !important;
+}
+
+.justc {
+	text-align: center !important;
+}
+
+.floatl {
+	float: left !important;
+}
+
+.floatr {
+	float: right !important;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+/* @group Tables */
+
+.table {
+	display: table;
+	width: 100%;
+}
+
+.table .tr {
+	display: table-row;
+}
+
+.table .tr .th {
+	display: table-cell;
+	width: auto;
+}
+
+.table .tr .tc {
+	display: table-cell;
+	width: auto;
+}
+
+
+
+/* @end */
