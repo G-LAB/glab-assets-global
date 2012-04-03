@@ -20,6 +20,14 @@
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
+.floatl {
+	float: left !important;
+}
+
+.floatr {
+	float: right !important;
+}
+
 .justl {
 	text-align: left !important;
 }
@@ -32,12 +40,20 @@
 	text-align: center !important;
 }
 
-.floatl {
-	float: left !important;
+.valign-baseline {
+	vertical-align: baseline;
 }
 
-.floatr {
-	float: right !important;
+.valign-bottom {
+	vertical-align: bottom;
+}
+
+.valign-middle {
+	vertical-align: middle;
+}
+
+.valign-top {
+	vertical-align: top;
 }
 
 strong {
@@ -47,6 +63,27 @@ strong {
 em {
 	font-style: italic;
 }
+
+/* @group Animation */
+
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg);}
+	100% { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+	0% { -moz-transform: rotate(0deg);}
+	100% { -moz-transform: rotate(360deg);}
+}
+@-o-keyframes spin {
+	0% { -o-transform: rotate(0deg);}
+	100% { -o-transform: rotate(360deg);}
+}
+@-ms-keyframes spin {
+	0% { -ms-transform: rotate(0deg);}
+	100% { -ms-transform: rotate(360deg);}
+}
+
+/* @end */
 
 /* @group Tables */
 
