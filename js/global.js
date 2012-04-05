@@ -5,10 +5,10 @@ glab.class = {};
 // Cookie Class
 glab.class.cookie = function () {}
 
-glab.class.cookie.prototype.set = function (name,value,days) {
-	if (days) {
+glab.class.cookie.prototype.set = function (name,value,seconds) {
+	if (seconds) {
 		var date = new Date();
-		date.setTime(date.getTime()+(days*24*60*60*1000));
+		date.setTime(date.getTime()+(seconds*60*1000));
 		var expires = "; expires="+date.toGMTString();
 	}
 	else var expires = "";
